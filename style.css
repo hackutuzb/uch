@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 290px;
+    height: 290px;
+    border: 2px solid;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: red;
+    animation: army1 3s infinite linear;
+    animation-delay: 1s;
+    transition: 3.5s;
+    margin: 15px;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: orange;
+    /* margin-top: 150px; */
+    animation: army2 3s infinite linear;
+    animation-delay: 2s;
+    transition: 6.5s;
+    margin: 15px;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    /* margin-top: 150px; */
+    /* margin-left: 150px; */
+    animation: army3 3s infinite linear;
+    animation-delay: 3s;
+    transition: 5.5s;
+    margin: 15px;
+}
+
+@keyframes army1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(150px);
+    }
+    50% {
+        transform: translateY(150px)  translateX(150px);
+    }
+
+    75% {
+        transform: translateY(150px);
+    }
+}
+
+@keyframes army2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(150px);
+    }
+    50% {
+        transform: translateY(150px)  translateX(150px);
+    }
+
+    75% {
+        transform: translateY(150px);
+    }
+}
+
+@keyframes army3 {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(150px);
+    }
+    50% {
+        transform: translateY(150px)  translateX(150px);
+    }
+
+    75% {
+        transform: translateY(150px);
+    }
+}
